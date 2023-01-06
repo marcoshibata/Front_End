@@ -196,7 +196,60 @@ footer{
     padding: 8px 0;
 }
 
+.items-menu-mobile{
+    width: 50%;
+    text-align: right;
+    display: none;
+}
+
+.items-menu-mobile i{
+    color: white;
+    position: relative;
+    top: 15px;
+    font-size: 23px;
+    cursor: pointer;
+}
+
 @media screen and (max-width:760px){
+
+    .items-menu-mobile{
+        display: block;
+    }
+
+    .menu-mobile{
+        
+        opacity: 0;
+        transition: 1s;
+        position: absolute;
+        left: 0;
+        top: 65px;
+        background-color: white;
+        width: 100%;
+        padding: 20px 0;
+        text-align: center;
+    }
+
+    .show{
+        opacity: 1;
+    }
+
+    .hide{
+        opacity: 0;
+    }
+
+    .menu-mobile a{
+        text-align: center;
+        display: block;
+        margin: 10px 0;
+        color: black;
+        text-decoration: none;
+        font-weight: bold;
+
+    }
+
+    section.main .itens-menu{
+        display: none;
+    }
 
     footer .itens-menu{
         width: 100%;
